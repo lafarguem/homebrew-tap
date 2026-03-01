@@ -5,11 +5,11 @@ class Deezranbum < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.0/deezranbum-aarch64-apple-darwin.tar.xz"
-      sha256 "4caf3aaf2dbb1605fd4239d0f03d1a80659c20bc1c26d72e10cbca79730c02e4"
+      sha256 "faea1222153363d95b6cf5f92ccb017e92dba65308bd19f6235735212dc70436"
     end
     if Hardware::CPU.intel?
       url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.0/deezranbum-x86_64-apple-darwin.tar.xz"
-      sha256 "a4a58e61241f9b747d05baea77971158f6bdc00e1322cd8fdddddeb9603847ac"
+      sha256 "ce3ef163bec4684d0de7813687facf714cd4750807c5affd3883fa8571fd0c30"
     end
   end
   license "MIT"
