@@ -1,15 +1,15 @@
 class Deezranbum < Formula
   desc "Fetches a random deezer album, without repeats between sessions"
   homepage "https://github.com/lafarguem/deezranbum"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.4/deezranbum-aarch64-apple-darwin.tar.xz"
-      sha256 "0d6d65d617f1cc2e18f173a81ec63174a6c4ef12f96d09d8b865aae77232f96b"
+      url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.5/deezranbum-aarch64-apple-darwin.tar.xz"
+      sha256 "6a94e5aaa60d46a259e06f9fbaff388bf485ba8012a7f163f1370adbfb097739"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.4/deezranbum-x86_64-apple-darwin.tar.xz"
-      sha256 "894935d5d7fa171c19e7d8942c20565f7b48444860d05d0fe60cbe7617b1362b"
+      url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.5/deezranbum-x86_64-apple-darwin.tar.xz"
+      sha256 "8255fd75e96cc121badc07acd15f25e0f58395cd98f0f4d7f335485b5bd1091a"
     end
   end
   license "MIT"
