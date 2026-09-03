@@ -1,15 +1,15 @@
 class Deezranbum < Formula
   desc "Fetches a random deezer album, without repeats between sessions"
   homepage "https://github.com/lafarguem/deezranbum"
-  version "0.1.8"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.8/deezranbum-aarch64-apple-darwin.tar.xz"
-      sha256 "6a9663ca1d62d6c972cfff703104f654f06d6da1c46e04cfc66efea1925760ee"
+      url "https://github.com/lafarguem/deezranbum/releases/download/v0.2.0/deezranbum-aarch64-apple-darwin.tar.xz"
+      sha256 "35e83100bd13c0de1789226fb6e0c6d821c524ab4184eb7c5d26140cba29add1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lafarguem/deezranbum/releases/download/v0.1.8/deezranbum-x86_64-apple-darwin.tar.xz"
-      sha256 "27d0ec7e513ce40c854ebb6ec7ca17c080c35fbda009e45d59a1ede186c22aef"
+      url "https://github.com/lafarguem/deezranbum/releases/download/v0.2.0/deezranbum-x86_64-apple-darwin.tar.xz"
+      sha256 "3c09c86d3bc1c7aea63380379c5293b947c8ffaa357f5631316a1639363378f3"
     end
   end
   license "MIT"
@@ -35,8 +35,12 @@ class Deezranbum < Formula
   end
 
   def install
-    bin.install "deezranbum" if OS.mac? && Hardware::CPU.arm?
-    bin.install "deezranbum" if OS.mac? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "deezranbum"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "deezranbum"
+    end
 
     install_binary_aliases!
 
