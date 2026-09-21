@@ -13,5 +13,6 @@ brew install lafarguem/tap/<formula>
 | Formula | Source |
 |---|---|
 | [`deezranbum`](Formula/deezranbum.rb) | [lafarguem/deezranbum](https://github.com/lafarguem/deezranbum) |
+| [`woodshed`](Formula/woodshed.rb) | [lafarguem/woodshed](https://github.com/lafarguem/woodshed) |
 
 Formulae here are published automatically by each source repo's release workflow — see [deezranbum's README](https://github.com/lafarguem/deezranbum#releasing-homebrew-deployment) for how that works.
