@@ -1,8 +1,8 @@
 class Woodshed < Formula
   desc "Records your covers, files each take under its song, and rates it"
   homepage "https://github.com/lafarguem/woodshed"
-  url "https://github.com/lafarguem/woodshed/archive/refs/tags/v0.7.2.tar.gz"
-  sha256 "76b7a20030d7d1719db747e6bdd36266a02b6fd395755ea740de4794bb2dbb59"
+  url "https://github.com/lafarguem/woodshed/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "3d1610c56ad441d3e7ab92683208e80e490964bf527c761c7432d4883f772b95"
   license "MIT"
 
   depends_on "uv" => :build
